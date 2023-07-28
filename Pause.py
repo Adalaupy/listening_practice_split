@@ -31,7 +31,6 @@ def on_stop_key(chrome_x,chrome_y,note_x,note_y):
 # Switch to another window
 def on_switch_key(chrome_x,chrome_y,note_x,note_y):
 
-    global Current_wind
 
     
     if "Google Chrome" in win32gui.GetWindowText(win32gui.GetForegroundWindow()):
@@ -54,7 +53,7 @@ def on_switch_key(chrome_x,chrome_y,note_x,note_y):
 
         pyautogui.moveTo(note_x,note_y)
         pyautogui.click()
-
+ 
 
 
     
@@ -63,9 +62,7 @@ def on_switch_key(chrome_x,chrome_y,note_x,note_y):
 # identify the coordinate of each window, will be used by stop/switch key
 def Pause(monitor_number):
 
-    global Current_wind
 
-        
 
     monitor = get_monitors()[monitor_number]
     chrome_x,chrome_y = monitor.x, 0
@@ -83,4 +80,4 @@ def Pause(monitor_number):
     
     
     
-    keyboard.wait("esc")
+    keyboard.wait("")
