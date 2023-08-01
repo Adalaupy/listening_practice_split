@@ -41,10 +41,11 @@ pip install -r requirements.txt
  
 
 # Room for Improvement/Limitation
-- Not allow to resize and move the window manually after opened
+- Not allow to resize and move the window manually after opened (issued solved on 2023-08-01)
 - Only available to Google Chrome and Notepad
 - Sometimes the window fail to resize in a proper position
-- Not available for selecting other keys
+- Not available for selecting other keyboard keys
+
 
 # Remark
 - User can still change the key in defined function **Pause(monitor_number)** of file **Pause.py** 
