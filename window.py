@@ -98,6 +98,8 @@ def split_coord(x,y):
 def open_win(Win_Title):
 
 
+    
+
     if Win_Title == "notepad":   
 
 
@@ -156,3 +158,4 @@ def open_size_win(Win_Title,move_win):
             
 
 
+    return Curr_window

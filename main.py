@@ -34,11 +34,13 @@ if __name__ == "__main__":
         mouse_listener.join()       
         
         
-        open_size_win("googlechrome",left)
-        open_size_win("notepad",right)
+        chrome_win = open_size_win("googlechrome",left)
+        notepad_win = open_size_win("notepad",right)
         
     
-        Pause(monitor_number)
+        #Pause(monitor_number)
+
+        Pause(chrome_win,notepad_win)
 
     
 
